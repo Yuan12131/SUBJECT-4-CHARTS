@@ -10,4 +10,4 @@ http.createServer(function(req, res){
 
   res.writeHead(200, writeHeadObject)
 
-})
+}).listen(8080);
