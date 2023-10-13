@@ -2,11 +2,12 @@ const { listCharts } = require('billboard-top-100');
 
 listCharts((err, charts) => {
   console.log(charts);
-  var chartsArr = [];
+  const chartsArr = [];
 
   for (let i = 0; i < charts.length; i++){
     for (let j = chartsArr; j <= chartsArr.length; j++){
-      
+      chartsArr[j] = charts[i].name + charts[i].url
+      break;
     }
   }
 
