@@ -7,7 +7,7 @@ listCharts((err, charts) => {
 
   for (let i = 0; i < charts.length; i++){
     for (let j = chartArray.length; j <= chartArray.length; j++){
-        chartArray[j] = "<div>" + charts[i].url +">" + charts[i].name + "</div>";
+        chartArray[j] = "<a href = " + charts[i].url +">" + charts[i].name + "</a><br>";
 
         fs.writeFile('index.html', chartArray.join(''), function() {
           console.log('File created');
