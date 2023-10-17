@@ -18,6 +18,7 @@ let server = http.createServer(function(req, res){
 }); // 포트번호 8080
 
 let PORT = 8080
-server.listen(8080, (err) => {
-  
+server.listen(`${PORT}`, (err) => {
+  console.log(`서버 가동중 끄려면 Ctrl + C를 누르세요
+cli 창에서 컨트롤 누른후  옆에 포트 누르면 편리하게 확인 -> http://localhost:${PORT}/`);
 })
