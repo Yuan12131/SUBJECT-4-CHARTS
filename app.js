@@ -21,4 +21,4 @@ let PORT = 8080
 server.listen(`${PORT}`, (err) => {
   console.log(`서버 가동중 끄려면 Ctrl + C를 누르세요
 cli 창에서 컨트롤 누른후  옆에 포트 누르면 편리하게 확인 -> http://localhost:${PORT}/`);
-})
+});
